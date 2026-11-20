@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Herbario educativo digital de plantas nativas de la provincia de Córdoba, Argentina.">
+<title>Guardianes del Espinal | Flora de Córdoba</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <img class="brand" src="assets/logo-guardianes.jpg" alt="Logo Guardianes del Espinal">
+  <div><p class="eyebrow">Herbario educativo digital</p><h1>Flora nativa de Córdoba</h1><p>Conocer nuestra flora es el primer paso para protegerla.</p></div>
+</header>
+<main>
+  <section class="intro"><h2>Explorá las plantas de nuestra provincia</h2><p>Fichas para aprender en primaria y secundaria: botánica, biodiversidad, memoria local y usos tradicionales. La información se amplía con nuevas especies y fuentes verificadas.</p></section>
+  <section class="controls" aria-label="Buscar plantas"><label for="search">Buscar por nombre</label><input id="search" type="search" placeholder="Ej.: algarrobo, chañar, peperina…"><label for="category">Categoría</label><select id="category"><option value="todas">Todas</option><option>Árbol</option><option>Arbusto</option><option>Hierba</option><option>Enredadera</option></select></section>
+  <section id="plant-list" class="plant-grid" aria-live="polite"></section>
+  <section class="about"><h2>¿Cómo usar este herbario?</h2><ol><li>Buscá la planta por su nombre común o científico.</li><li>Leé la ficha y observá sus características.</li><li>Compará lo que encontrás en el jardín con la descripción.</li><li>Compartí el conocimiento y cuidá las plantas nativas.</li></ol><p class="notice"><strong>Importante:</strong> los usos medicinales se presentan como saberes tradicionales documentados, no como recomendaciones de tratamiento. No consumas ni prepares plantas sin identificación segura y asesoramiento profesional.</p></section>
+</main>
+<footer><img src="assets/logo-guardianes.jpg" alt=""/><p><strong>Guardianes del Espinal</strong><br>Proyecto educativo de biodiversidad de Córdoba, Argentina.</p><p class="small">Sitio en etapa de prueba. Las fichas se completarán y revisarán con bibliografía botánica y fuentes etnobotánicas.</p></footer>
+<script src="plants.js"></script><script src="app.js"></script>
+</body></html>
