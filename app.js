@@ -12,7 +12,8 @@ const byId = id => plants.find(p => p.id === id);
 const plantPhotos = {
   'algarrobo-blanco': 'Neltuma_alba.jpg',
   'espinillo': 'Espinillo_Vachellia_caven.jpg',
-  'chanar': 'Chañar_Geoffroea_decorticans.jpg.jpg'
+  'chanar': 'Chañar_Geoffroea_decorticans.jpg.jpg',
+  'mistol': 'Mistol_Sarcomphalus_mistol.jpg'
 };
 
 const photoMarkup = (p, detail = false) => {
