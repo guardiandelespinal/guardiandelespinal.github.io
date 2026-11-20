@@ -16,6 +16,7 @@ const plantPhotos = {
   'mistol': 'Mistol_Sarcomphalus_mistol.jpg',
   'molle': 'Molle_Lithraea_molleoides.jpg',
   'peperina': 'Peperina_Minthostachys_verticillata.jpg'
+  'tabaquillo': 'Polylepis_Australis.jpg'
 };
 
 const photoMarkup = (p, detail = false) => {
