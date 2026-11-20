@@ -11,7 +11,8 @@ const byId = id => plants.find(p => p.id === id);
 // Fotografías verificadas y publicadas en la raíz del repositorio.
 const plantPhotos = {
   'algarrobo-blanco': 'Neltuma_alba.jpg',
-  'espinillo': 'Espinillo_Vachellia_caven.jpg'
+  'espinillo': 'Espinillo_Vachellia_caven.jpg',
+  'chanar': 'Chañar_Geoffroea_decorticans.jpg.jpg'
 };
 
 const photoMarkup = (p, detail = false) => {
