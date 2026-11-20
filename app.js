@@ -15,7 +15,7 @@ const plantPhotos = {
   'chanar': 'Chañar_Geoffroea_decorticans.jpg.jpg',
   'mistol': 'Mistol_Sarcomphalus_mistol.jpg',
   'molle': 'Molle_Lithraea_molleoides.jpg',
-  'peperina': 'Peperina_Minthostachys_verticillata.jpg'
+  'peperina': 'Peperina_Minthostachys_verticillata.jpg',
   'tabaquillo': 'Polylepis_Australis.jpg'
 };
 
