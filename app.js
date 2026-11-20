@@ -14,7 +14,8 @@ const plantPhotos = {
   'espinillo': 'Espinillo_Vachellia_caven.jpg',
   'chanar': 'Chañar_Geoffroea_decorticans.jpg.jpg',
   'mistol': 'Mistol_Sarcomphalus_mistol.jpg',
-  'molle': 'Molle_Lithraea_molleoides.jpg'
+  'molle': 'Molle_Lithraea_molleoides.jpg',
+  'peperina': 'Peperina_Minthostachys_verticillata.jpg'
 };
 
 const photoMarkup = (p, detail = false) => {
