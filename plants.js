@@ -128,17 +128,25 @@ const plants = [
     sources: [['Flora de la provincia de Córdoba – referencia bibliográfica para completar', 'https://editorial.unc.edu.ar/']]
   },
   {
-    id: 'tala', common: 'Tala', scientific: 'Celtis ehrenbergiana', type: 'Árbol',
-    region: 'Nativo de ambientes del Espinal, Chaco y bosques serranos bajos de Córdoba.',
-    description: 'Árbol de copa irregular y ramas que pueden presentar espinas. Sus hojas tienen nervaduras bien marcadas.',
-    flower: 'Flores pequeñas y poco llamativas.', fruit: 'Frutos carnosos pequeños, que toman tonos anaranjados o rojizos al madurar.',
-    uses: 'Se registran aprovechamientos locales de frutos y madera. La información de cada práctica debe vincularse con fuentes o testimonios identificados.',
-    culture: 'El nombre tala aparece en topónimos y nombres de paisajes de distintas regiones argentinas.',
-    ecology: 'Sus frutos pueden ser consumidos por aves y otros animales; sus ramas ofrecen refugio.',
-    didYouKnow: 'Los frutos pequeños y carnosos del tala son un recurso alimenticio para animales del monte.',
-    challengePrimary: 'Buscá un fruto maduro caído y describí su tamaño, color y textura sin probarlo.',
-    challengeSecondary: '¿Qué relación puede existir entre la presencia de frutos carnosos y la diversidad de aves en un bosque?',
-    sources: [['Flora de la provincia de Córdoba – referencia bibliográfica para completar', 'https://editorial.unc.edu.ar/']]
+    id: 'tala',
+  common: 'Tala',
+  scientific: 'Celtis ehrenbergiana',
+  type: 'Árbol',
+  region: 'Nativo de ambientes del Espinal, Chaco y bosques serranos de Córdoba.',
+  description: 'Árbol caducifolio que puede alcanzar entre 5 y 12 metros de altura. Su tronco y sus ramas suelen presentar formas irregulares y zigzagueantes. Sus ramas poseen espinas rectas.',
+  flower: 'Flores pequeñas, poco llamativas, de color verdoso o amarillento. Aparecen principalmente en primavera.',
+  fruit: 'Fruto carnoso tipo drupa, pequeño y de color anaranjado o amarillo al madurar. Es conocido popularmente como talita.',
+  uses: 'Sus frutos maduros son comestibles. La madera se ha utilizado como leña y combustible. Los usos tradicionales deben documentarse indicando su procedencia.',
+  culture: 'El tala forma parte del paisaje y de la identidad de distintos ambientes naturales de Argentina. Su presencia en los montes nativos también representa un vínculo entre la vegetación y la fauna local.',
+  ecology: 'Sus frutos alimentan a numerosas aves y otros animales, que contribuyen a dispersar sus semillas. Su ramaje espinoso ofrece refugio y sitios de nidificación para distintas especies.',
+  didYouKnow: 'Las aves que comen sus frutos ayudan a que las semillas del tala lleguen a otros lugares y puedan germinar.',
+  challengePrimary: 'Buscá una hoja de tala caída y observá sus nervaduras y el borde aserrado. ¿Qué forma tiene?',
+  challengeSecondary: '¿Cómo contribuyen los frutos y las ramas espinosas del tala a la supervivencia de las aves y otros animales del monte?',
+  sources: [
+    ['Flora de Entre Ríos - Fichas técnicas', 'https://aprender.entrerios.edu.ar/wp-content/uploads/2025/06/Flora-de-Entre-Rios_fichas-Tecnicas.pdf'],
+    ['Flora nativa de la Cuenca Matanza Riachuelo - ACUMAR', 'https://www.acumar.gob.ar/wp-content/uploads/2016/12/Fichas-Flora-Nativa_1.pdf'],
+    ['Contribución al conocimiento de flora y recursos de la Reserva Natural Laguna La Felipa, Córdoba', 'https://www.academia.edu/82019161/Contribuci%C3%B3n_al_conocimiento_de_flora_y_recursos_de_la_Reserva_Natural_de_Fauna_Laguna_La_Felipa_C%C3%B3rdoba_Argentina_']
+  ]
   },
   {
     id: 'pasionaria', common: 'Pasionaria / mburucuyá', scientific: 'Passiflora caerulea', type: 'Enredadera',
