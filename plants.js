@@ -3,22 +3,37 @@
 // su identificación botánica, procedencia y licencia de uso.
 const plants = [
   {
-    id: 'algarrobo-blanco', common: 'Algarrobo blanco', scientific: 'Neltuma alba (sin. Prosopis alba)', type: 'Árbol',
-    region: 'Nativo de Córdoba; presente en ambientes del Parque Chaqueño y otras regiones del centro y norte argentino.',
-    description: 'Árbol de copa amplia, con hojas compuestas bipinnadas y ramas que pueden presentar espinas. Su tamaño y aspecto varían según las condiciones del ambiente.',
-    flower: 'Flores pequeñas amarillentas, agrupadas en espigas cilíndricas que suelen verse péndulas.',
-    fruit: 'Vainas alargadas, algo curvas o casi rectas, amarillentas al madurar; contienen semillas rodeadas por pulpa.',
-    uses: 'Las vainas se muelen para obtener harina usada en preparaciones como patay; también se registran bebidas y arropes tradicionales. La madera tuvo usos como combustible, construcción y mueblería.',
-    culture: 'Los frutos del algarrobo forman parte de la memoria alimentaria de comunidades del centro y norte argentino. Las recetas y prácticas se transmiten entre generaciones y pueden variar entre localidades.',
-    ecology: 'Sus flores ofrecen recursos a insectos; las vainas alimentan animales y personas. Como leguminosa, participa de procesos ecológicos vinculados al nitrógeno del suelo.',
-    didYouKnow: 'El nombre científico actual utilizado por el Sistema de Información de Biodiversidad es Neltuma alba. En bibliografía y recetas antiguas todavía es muy común encontrar el nombre Prosopis alba.',
-    challengePrimary: 'Observá las hojas: ¿ves que cada hoja está dividida en muchas hojitas pequeñas? Dibujá una hoja completa y contá sus divisiones.',
-    challengeSecondary: 'Compará una vaina madura con una semilla. ¿Qué estructuras protegen la semilla y cómo podría dispersarse en el ambiente?',
-    sources: [
-      ['Sistema de Información de Biodiversidad – Neltuma alba', 'https://sib.gob.ar/especies/neltuma-alba'],
-      ['IDACOR-CONICET – Plantas ancestrales y saberes locales', 'https://idacor.conicet.gov.ar/plantas-locales/'],
-      ['Guía florística – Universidad Nacional del Nordeste', 'https://www.agr.unne.edu.ar/images/Documentos/Varios/Unitecbio_GuiaFloral_Digital_2.pdf']
-    ]
+    id: 'algarrobo-blanco',
+  common: 'Algarrobo blanco',
+  scientific: 'Neltuma alba (sin. Prosopis alba)',
+  type: 'Árbol',
+
+  region: 'Especie nativa de Sudamérica, presente en Argentina y registrada en Córdoba. Su presencia autóctona en Río Cuarto y en la Reserva Chocancharava requiere confirmación mediante registros locales.',
+
+  description: 'Árbol que puede alcanzar aproximadamente 5 a 12 metros de altura, con copa amplia, corteza pardo-grisácea y ramas que pueden presentar espinas. Sus hojas son compuestas y bipinnadas, formadas por numerosos folíolos pequeños.',
+
+  flower: 'Flores pequeñas, amarillentas, agrupadas en espigas alargadas y cilíndricas, generalmente péndulas. Ofrecen néctar y polen a distintos insectos.',
+
+  fruit: 'Produce vainas conocidas como algarrobas, alargadas, curvas o casi rectas, amarillentas al madurar. Contienen semillas rodeadas por una pulpa aprovechable como alimento.',
+
+  uses: 'Los frutos se utilizan para elaborar harina de algarroba, patay, arrope y bebidas tradicionales. La madera también ha sido aprovechada como combustible y para construcción, muebles y artesanías.',
+
+  culture: 'El algarrobo forma parte de la memoria alimentaria y cultural de distintas comunidades del centro y norte argentino. Las recetas y prácticas tradicionales se transmiten entre generaciones y pueden variar entre localidades.',
+
+  ecology: 'Sus flores ofrecen recursos a insectos polinizadores y sus frutos alimentan a distintos animales. Como leguminosa, establece asociaciones con microorganismos del suelo que participan en la fijación biológica del nitrógeno.',
+
+  didYouKnow: 'La harina de algarroba se obtiene de sus frutos secos molidos y se utiliza en preparaciones tradicionales como el patay. El nombre Prosopis alba todavía aparece con frecuencia en libros, recetas y bibliografía anterior a su reclasificación.',
+
+  challengePrimary: 'Observá las hojas: ¿ves que cada hoja está dividida en muchas hojitas pequeñas? Dibujá una hoja completa y contá sus divisiones.',
+
+  challengeSecondary: '¿Qué importancia tiene la asociación del algarrobo con bacterias fijadoras de nitrógeno? Investigá cómo este proceso contribuye al funcionamiento del suelo.',
+
+  sources: [
+    ['Sistema de Información de Biodiversidad – Neltuma alba', 'https://sib.gob.ar/especies/neltuma-alba'],
+    ['Plants of the World Online – Royal Botanic Gardens, Kew', 'https://powo.science.kew.org/'],
+    ['Hughes et al. (2022) – Revisión taxonómica de Prosopis', 'https://doi.org/10.3897/phytokeys.205.75379'],
+    ['IDACOR-CONICET – Plantas ancestrales y saberes locales', 'https://idacor.conicet.gov.ar/plantas-locales/']
+  ]
   },
   {
     id: 'espinillo', common: 'Espinillo', scientific: 'Vachellia caven (sin. Acacia caven)', type: 'Árbol',
