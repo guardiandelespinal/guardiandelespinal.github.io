@@ -68,6 +68,79 @@ function sourceLinks(p) {
   return `<ul class="source-list">${p.sources.map(s => `<li><a href="${esc(s[1])}" target="_blank" rel="noopener noreferrer">${esc(s[0])}</a></li>`).join('')}</ul>`;
 }
 
+function renderQuickDetail(p) {
+  document.body.classList.add('detail-open');
+  controls.hidden = true;
+  intro.hidden = true;
+  list.className = 'plant-detail';
+
+  list.innerHTML = `
+    <a class="back-link" href="#">← Volver al herbario</a>
+
+    <header class="detail-heading">
+      <span class="tag">Conocé nuestra flora</span>
+      <h2>${esc(p.common)}</h2>
+      <p class="detail-scientific">${esc(p.scientific)}</p>
+    </header>
+
+    <img class="detail-photo-image"
+      src="algarrobo-arbol.jpg"
+      alt="Árbol de algarrobo blanco">
+
+    <section class="detail-section">
+      <h3>Aprendé a reconocerlo</h3>
+      <div class="quick-photo-grid">
+        <article class="fact">
+          <img src="algarrobo-hojas.jpg" alt="Hojas del algarrobo blanco">
+          <h4>Hojas</h4>
+          <p>Compuestas y bipinnadas, con pequeñas hojuelas.</p>
+        </article>
+
+        <article class="fact">
+          <img src="algarrobo-flores.jpg" alt="Flores del algarrobo blanco">
+          <h4>Flores</h4>
+          <p>Pequeñas, amarillentas y agrupadas en espigas.</p>
+        </article>
+
+        <article class="fact">
+          <img src="algarrobo-frutos.jpg" alt="Frutos del algarrobo blanco">
+          <h4>Frutos</h4>
+          <p>Vainas alargadas con semillas y pulpa dulce.</p>
+        </article>
+
+        <article class="fact">
+          <img src="algarrobo-corteza.jpg" alt="Corteza del algarrobo blanco">
+          <h4>Tronco y corteza</h4>
+          <p>Corteza parda. Las ramas pueden presentar espinas.</p>
+        </article>
+      </div>
+
+      <article class="fact">
+        <img src="algarrobo-rama.jpg" alt="Rama de algarrobo blanco">
+        <h4>Observá también sus ramas</h4>
+        <p>La forma de las ramas y la presencia de espinas ayudan a reconocerlo.</p>
+      </article>
+    </section>
+
+    <section class="did-you-know">
+      <h3>🌿 ¿Sabías que...?</h3>
+      <p>Los frutos del algarrobo se utilizan tradicionalmente para elaborar harina, arrope y otras preparaciones alimenticias.</p>
+    </section>
+
+    <button class="button-link" id="show-full-detail" type="button">
+      Conocé más sobre esta especie →
+    </button>
+
+    <p class="editorial-note">
+      Fotografías: consultar los créditos y licencias en la ficha completa.
+    </p>
+  `;
+
+  document.getElementById('show-full-detail')
+    .addEventListener('click', () => renderDetail(p));
+
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
 function renderDetail(p) {
   document.body.classList.add('detail-open');
   controls.hidden = true;
@@ -112,9 +185,14 @@ function routeFromHash() {
   const id = decodeURIComponent(location.hash.slice(1));
   if (!id) { renderList(); return; }
   const plant = byId(id);
-  if (plant) renderDetail(plant);
-  else renderList();
+  if (plant && plant.id === 'algarrobo-blanco') {
+  renderQuickDetail(plant);
+} else if (plant) {
+  renderDetail(plant);
+} else {
+  renderList();
 }
+  }
 
 search.addEventListener('input', renderList);
 category.addEventListener('change', renderList);
