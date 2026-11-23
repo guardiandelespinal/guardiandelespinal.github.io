@@ -177,6 +177,14 @@ function renderDetail(p) {
       <div class="challenge-columns"><article><h4>Primaria · Observar</h4><p>${esc(p.challengePrimary)}</p></article><article><h4>Secundaria · Investigar</h4><p>${esc(p.challengeSecondary)}</p></article></div>
     </section>
     <section class="detail-section sources"><h3>Fuentes para ampliar</h3>${sourceLinks(p)}<p class="editorial-note">La ficha está en desarrollo. Los campos marcados como pendientes se completarán cuando se incorporen referencias específicas y verificables.</p></section>
+  <section class="detail-section">
+      <h3>Créditos fotográficos</h3>
+      <ul class="source-list">
+        <li>Árbol, hojas, flores, frutos y corteza: Milena Calvi. Licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</li>
+        <li>Rama: Rebeca Quetglas. Licencia <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 1.0</a>.</li>
+      </ul>
+      <p class="editorial-note">Fotografías utilizadas respetando sus licencias originales.</p>
+    </section>
     <a class="back-link bottom-back" href="#">← Volver al herbario</a>`;
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
