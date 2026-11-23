@@ -181,10 +181,21 @@ function renderDetail(p) {
     <section class="detail-section">
       <h3>Créditos fotográficos</h3>
       <ul class="source-list">
-        <li>Árbol, hojas, flores, frutos y corteza: Milena Calvi. Licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</li>
-        <li>Rama: Rebeca Quetglas. Licencia <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 1.0</a>.</li>
+        <li>Árbol (porte): Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Neltuma_alba_(Griseb.)_C.E.Hughes_%26_G.P.Lewis_-_Porte.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
+        <li>Hojas: Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Neltuma_alba_(Griseb.)_C.E.Hughes_%26_G.P.Lewis_-_Hoja.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
+        <li>Flores: Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Neltuma_alba_(Griseb.)_C.E.Hughes_%26_G.P.Lewis_-_Flor.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
+        <li>Frutos: Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Neltuma_alba_(Griseb.)_C.E.Hughes_%26_G.P.Lewis_-_Fruto_(foto_2).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
+        <li>Corteza: Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Neltuma_alba_(Griseb.)_C.E.Hughes_%26_G.P.Lewis_-_Corteza.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
+        <li>Rama: Rebeca Quetglas — <a href="https://commons.wikimedia.org/wiki/File:Neltuma_alba.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
       </ul>
-      <p class="editorial-note">Fotografías utilizadas respetando sus licencias originales.</p>
+      <p class="editorial-note">
+        Fotografías de Milena Calvi: licencia CC BY-SA 4.0.
+        Fotografía de Rebeca Quetglas: licencia CC0 1.0.
+      </p>
+      <p class="editorial-note">
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Consultar CC BY-SA 4.0</a> ·
+        <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">Consultar CC0 1.0</a>.
+      </p>
     </section>
     ` : ''}
     <a class="back-link bottom-back" href="#">← Volver al herbario</a>`;
