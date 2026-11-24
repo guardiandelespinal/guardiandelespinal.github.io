@@ -303,6 +303,24 @@ function renderDetail(p) {
       </p>
     </section>
     ` : ''}
+    ${p.id === 'chanar' ? `
+    <section class="detail-section">
+      <h3>Créditos fotográficos</h3>
+      <ul class="source-list">
+        <li>Árbol (porte): Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Geoffroea_decorticans_(Hook._%26_Arn.)_Burkart_-_Porte.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
+        <li>Hojas: Dypnosis — <a href="https://commons.wikimedia.org/wiki/File:Chañar-hojas.JPG" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
+        <li>Flores: Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Geoffroea_decorticans_(Hook._%26_Arn.)_Burkart_-_Flor_(foto_1).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
+        <li>Frutos: Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Geoffroea_decorticans_(Hook._%26_Arn.)_Burkart_-_Fruto_(foto_1).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
+        <li>Tronco y corteza: Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Geoffroea_decorticans_(Hook._%26_Arn.)_Burkart_-_Corteza.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
+      </ul>
+      <p class="editorial-note">
+        Fotografías de Milena Calvi y Dypnosis: licencia CC BY-SA 4.0.
+      </p>
+      <p class="editorial-note">
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Consultar licencia CC BY-SA 4.0</a>.
+      </p>
+    </section>
+` : ''}
     <a class="back-link bottom-back" href="#">← Volver al herbario</a>`;
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
