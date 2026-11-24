@@ -138,7 +138,7 @@ const quickDetails = {
       }
     ],
     didYouKnow: 'Las flores pequeñas se agrupan en cabezuelas que forman esferas amarillas y perfumadas, muy características durante la floración.'
-  }
+  },
   'chanar': {
     hero: 'chanar-arbol.jpg',
     heroAlt: 'Árbol de chañar',
