@@ -8,10 +8,10 @@ const intro = document.querySelector('.intro');
 const esc = (value = '') => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const byId = id => plants.find(p => p.id === id);
 
-// Fotografías verificadas y publicadas en la raíz del repositorio.
+// Fotografías publicadas en la raíz del repositorio.
 const plantPhotos = {
   'algarrobo-blanco': 'Neltuma_alba.jpg',
-  'espinillo': 'Espinillo_Vachellia_caven.jpg',
+  'espinillo': 'espinillo-arbol.jpg',
   'chanar': 'Chañar_Geoffroea_decorticans.jpg.jpg',
   'mistol': 'Mistol_Sarcomphalus_mistol.jpg',
   'molle': 'Molle_Lithraea_molleoides.jpg',
@@ -68,11 +68,108 @@ function sourceLinks(p) {
   return `<ul class="source-list">${p.sources.map(s => `<li><a href="${esc(s[1])}" target="_blank" rel="noopener noreferrer">${esc(s[0])}</a></li>`).join('')}</ul>`;
 }
 
+// Contenido específico de las fichas rápidas.
+const quickDetails = {
+  'algarrobo-blanco': {
+    hero: 'algarrobo-arbol.jpg',
+    heroAlt: 'Árbol de algarrobo blanco',
+    photos: [
+      {
+        image: 'algarrobo-hojas.jpg',
+        alt: 'Hojas del algarrobo blanco',
+        title: 'Hojas',
+        description: 'Compuestas y bipinnadas, con pequeñas hojuelas.'
+      },
+      {
+        image: 'algarrobo-flores.jpg',
+        alt: 'Flores del algarrobo blanco',
+        title: 'Flores',
+        description: 'Pequeñas, amarillentas y agrupadas en espigas.'
+      },
+      {
+        image: 'algarrobo-frutos.jpg',
+        alt: 'Frutos del algarrobo blanco',
+        title: 'Frutos',
+        description: 'Vainas alargadas con semillas y pulpa dulce.'
+      },
+      {
+        image: 'algarrobo-corteza.jpg',
+        alt: 'Corteza del algarrobo blanco',
+        title: 'Tronco y corteza',
+        description: 'Corteza parda. Las ramas pueden presentar espinas.'
+      }
+    ],
+    extra: {
+      image: 'algarrobo-rama.jpg',
+      alt: 'Rama de algarrobo blanco',
+      title: 'Observá también sus ramas',
+      description: 'La forma de las ramas y la presencia de espinas ayudan a reconocerlo.'
+    },
+    didYouKnow: 'Los frutos del algarrobo se utilizan tradicionalmente para elaborar harina, arrope y otras preparaciones alimenticias.'
+  },
+
+  'espinillo': {
+    hero: 'espinillo-arbol.jpg',
+    heroAlt: 'Árbol de espinillo',
+    photos: [
+      {
+        image: 'espinillo-hojas.jpg',
+        alt: 'Hojas del espinillo',
+        title: 'Hojas',
+        description: 'Hojas compuestas y bipinnadas, formadas por muchas hojitas pequeñas.'
+      },
+      {
+        image: 'espinillo-flores.jpg',
+        alt: 'Flores del espinillo',
+        title: 'Flores',
+        description: 'Amarillo-doradas, perfumadas y agrupadas en cabezuelas redondeadas.'
+      },
+      {
+        image: 'espinillo-frutos.jpg',
+        alt: 'Frutos del espinillo',
+        title: 'Frutos',
+        description: 'Legumbres gruesas y duras, de color castaño oscuro a negro al madurar.'
+      },
+      {
+        image: 'espinillo-ramas.jpg',
+        alt: 'Ramas y espinas del espinillo',
+        title: 'Tronco y ramas',
+        description: 'Ramas con espinas claras, rectas y agudas.'
+      }
+    ],
+    didYouKnow: 'Las flores pequeñas se agrupan en cabezuelas que forman esferas amarillas y perfumadas, muy características durante la floración.'
+  }
+};
+
 function renderQuickDetail(p) {
+  const q = quickDetails[p.id];
+
+  // Si no hay una ficha rápida preparada, se muestra la ficha completa.
+  if (!q) {
+    renderDetail(p);
+    return;
+  }
+
   document.body.classList.add('detail-open');
   controls.hidden = true;
   intro.hidden = true;
   list.className = 'plant-detail';
+
+  const photosHTML = q.photos.map(photo => `
+    <article class="fact">
+      <img src="${photo.image}" alt="${esc(photo.alt)}" loading="lazy">
+      <h4>${esc(photo.title)}</h4>
+      <p>${esc(photo.description)}</p>
+    </article>
+  `).join('');
+
+  const extraHTML = q.extra ? `
+    <article class="fact">
+      <img src="${q.extra.image}" alt="${esc(q.extra.alt)}" loading="lazy">
+      <h4>${esc(q.extra.title)}</h4>
+      <p>${esc(q.extra.description)}</p>
+    </article>
+  ` : '';
 
   list.innerHTML = `
     <a class="back-link" href="#">← Volver al herbario</a>
@@ -84,47 +181,21 @@ function renderQuickDetail(p) {
     </header>
 
     <img class="detail-photo-image"
-      src="algarrobo-arbol.jpg"
-      alt="Árbol de algarrobo blanco">
+      src="${q.hero}"
+      alt="${esc(q.heroAlt)}"
+      loading="lazy">
 
     <section class="detail-section">
       <h3>Aprendé a reconocerlo</h3>
       <div class="quick-photo-grid">
-        <article class="fact">
-          <img src="algarrobo-hojas.jpg" alt="Hojas del algarrobo blanco">
-          <h4>Hojas</h4>
-          <p>Compuestas y bipinnadas, con pequeñas hojuelas.</p>
-        </article>
-
-        <article class="fact">
-          <img src="algarrobo-flores.jpg" alt="Flores del algarrobo blanco">
-          <h4>Flores</h4>
-          <p>Pequeñas, amarillentas y agrupadas en espigas.</p>
-        </article>
-
-        <article class="fact">
-          <img src="algarrobo-frutos.jpg" alt="Frutos del algarrobo blanco">
-          <h4>Frutos</h4>
-          <p>Vainas alargadas con semillas y pulpa dulce.</p>
-        </article>
-
-        <article class="fact">
-          <img src="algarrobo-corteza.jpg" alt="Corteza del algarrobo blanco">
-          <h4>Tronco y corteza</h4>
-          <p>Corteza parda. Las ramas pueden presentar espinas.</p>
-        </article>
+        ${photosHTML}
       </div>
-
-      <article class="fact">
-        <img src="algarrobo-rama.jpg" alt="Rama de algarrobo blanco">
-        <h4>Observá también sus ramas</h4>
-        <p>La forma de las ramas y la presencia de espinas ayudan a reconocerlo.</p>
-      </article>
+      ${extraHTML}
     </section>
 
     <section class="did-you-know">
       <h3>🌿 ¿Sabías que...?</h3>
-      <p>Los frutos del algarrobo se utilizan tradicionalmente para elaborar harina, arrope y otras preparaciones alimenticias.</p>
+      <p>${esc(q.didYouKnow)}</p>
     </section>
 
     <button class="button-link" id="show-full-detail" type="button">
@@ -141,6 +212,7 @@ function renderQuickDetail(p) {
 
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
 function renderDetail(p) {
   document.body.classList.add('detail-open');
   controls.hidden = true;
@@ -184,7 +256,7 @@ function renderDetail(p) {
         <li>Árbol (porte): Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Neltuma_alba_(Griseb.)_C.E.Hughes_%26_G.P.Lewis_-_Porte.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
         <li>Hojas: Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Neltuma_alba_(Griseb.)_C.E.Hughes_%26_G.P.Lewis_-_Hoja.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
         <li>Flores: Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Neltuma_alba_(Griseb.)_C.E.Hughes_%26_G.P.Lewis_-_Flor.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
-        <li>Frutos: Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Neltuma_alba_(Griseb.)_C.E.Hughes_%26_G.P.Lewis_-_Fruto_(foto_2).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
+        <li>Frutos: Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Neltuma_alba_(Griseb.)_C.E.Hughes_%26_G.P.LewIS_-_Fruto_(foto_2).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
         <li>Corteza: Milena Calvi — <a href="https://commons.wikimedia.org/wiki/File:Neltuma_alba_(Griseb.)_C.E.Hughes_%26_G.P.Lewis_-_Corteza.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
         <li>Rama: Rebeca Quetglas — <a href="https://commons.wikimedia.org/wiki/File:Neltuma_alba.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</li>
       </ul>
@@ -204,16 +276,24 @@ function renderDetail(p) {
 
 function routeFromHash() {
   const id = decodeURIComponent(location.hash.slice(1));
-  if (!id) { renderList(); return; }
-  const plant = byId(id);
-  if (plant && plant.id === 'algarrobo-blanco') {
-  renderQuickDetail(plant);
-} else if (plant) {
-  renderDetail(plant);
-} else {
-  renderList();
-}
+  if (!id) {
+    renderList();
+    return;
   }
+
+  const plant = byId(id);
+
+  if (!plant) {
+    renderList();
+    return;
+  }
+
+  if (quickDetails[plant.id]) {
+    renderQuickDetail(plant);
+  } else {
+    renderDetail(plant);
+  }
+}
 
 search.addEventListener('input', renderList);
 category.addEventListener('change', renderList);
