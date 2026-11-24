@@ -12,7 +12,7 @@ const byId = id => plants.find(p => p.id === id);
 const plantPhotos = {
   'algarrobo-blanco': 'Neltuma_alba.jpg',
   'espinillo': 'espinillo-arbol.jpg',
-  'chanar': 'Chañar_Geoffroea_decorticans.jpg.jpg',
+ 'chanar': 'chanar-arbol.jpg',
   'mistol': 'Mistol_Sarcomphalus_mistol.jpg',
   'molle': 'Molle_Lithraea_molleoides.jpg',
   'peperina': 'Peperina_Minthostachys_verticillata.jpg',
@@ -138,6 +138,39 @@ const quickDetails = {
       }
     ],
     didYouKnow: 'Las flores pequeñas se agrupan en cabezuelas que forman esferas amarillas y perfumadas, muy características durante la floración.'
+  }
+  'chanar': {
+    hero: 'chanar-arbol.jpg',
+    heroAlt: 'Árbol de chañar',
+
+    photos: [
+      {
+        image: 'chanar-hojas.jpg',
+        alt: 'Hojas del chañar',
+        title: 'Hojas',
+        description: 'Hojas compuestas, formadas por pequeñas hojuelas dispuestas a ambos lados de un eje.'
+      },
+      {
+        image: 'chanar-flores.jpg',
+        alt: 'Flores del chañar',
+        title: 'Flores',
+        description: 'Flores amarillas o anaranjadas, agrupadas sobre las ramas.'
+      },
+      {
+        image: 'chanar-frutos.jpg',
+        alt: 'Frutos del chañar',
+        title: 'Frutos',
+        description: 'Frutos carnosos, de tonalidad amarilla a anaranjada cuando maduran.'
+      },
+      {
+        image: 'chanar-tronco.jpg',
+        alt: 'Tronco y corteza del chañar',
+        title: 'Tronco y corteza',
+        description: 'Corteza característica que se desprende en láminas y deja ver sectores verdosos.'
+      }
+    ],
+
+    didYouKnow: 'El fruto del chañar tiene una larga tradición de aprovechamiento alimentario. En distintas regiones se utiliza para preparar arrope y dulces.'
   }
 };
 
