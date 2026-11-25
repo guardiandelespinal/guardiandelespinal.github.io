@@ -89,17 +89,35 @@ const plants = [
     ]
   },
   {
-    id: 'molle', common: 'Molle de beber', scientific: 'Lithraea molleoides', type: 'Árbol',
-    region: 'Nativo de ambientes serranos y bosques del centro de Argentina, incluido Córdoba.',
-    description: 'Árbol o arbolito de follaje persistente, con hojas simples y copa variable.',
-    flower: 'Flores pequeñas reunidas en inflorescencias.', fruit: 'Fruto pequeño y carnoso, que cambia de color al madurar.',
-    uses: 'Se registran aprovechamientos tradicionales regionales. Algunas especies de la familia Anacardiaceae pueden provocar reacciones cutáneas; no manipular ni consumir sin identificación experta.',
-    culture: 'Forma parte de los saberes sobre plantas del monte serrano. Los relatos y recetas deben documentarse indicando localidad y fuente.',
-    ecology: 'Integra el bosque serrano y aporta estructura y recursos para la fauna.',
-    didYouKnow: 'El nombre común “molle” puede aplicarse a distintas especies; el nombre científico ayuda a evitar confusiones entre plantas diferentes.',
-    challengePrimary: 'Observá la forma y disposición de las hojas sin arrancarlas. ¿Son simples o están divididas?',
-    challengeSecondary: '¿Por qué la identificación precisa de una especie es especialmente importante cuando se registran usos tradicionales?',
-    sources: [['Flora de la provincia de Córdoba – referencia bibliográfica para completar', 'https://editorial.unc.edu.ar/']]
+    id: 'molle',
+  common: 'Molle de beber',
+  scientific: 'Lithraea molleoides',
+  type: 'Árbol',
+
+  region: 'Especie nativa de Sudamérica, registrada en Córdoba y característica de ambientes del Chaco Serrano. Su presencia específica en la Reserva Chocancharava todavía requiere confirmación mediante registros locales.',
+
+  description: 'Árbol mediano que puede alcanzar entre 3 y 8 metros de altura. Presenta copa globosa, densa y brillante, con ramas oscuras y tortuosas, generalmente sin espinas.',
+
+  flower: 'Flores pequeñas, amarillentas, agrupadas en racimos compuestos o panículas axilares. Puede presentar flores masculinas y femeninas en ejemplares diferentes.',
+
+  fruit: 'Fruto globoso tipo drupa, de aproximadamente 6 a 8 mm. Tiene una cubierta blanquecina o translúcida que permite observar la pulpa oscura, carnosa y de sabor dulce y picante.',
+
+  uses: 'Los frutos cuentan con usos alimentarios tradicionales: se emplean para preparar arrope y una bebida fermentada conocida como aloja de molle. La planta puede provocar reacciones alérgicas; no se recomienda manipularla ni utilizarla en preparados caseros.',
+
+  culture: 'El nombre “molle de beber” se relaciona con el aprovechamiento tradicional de sus frutos en bebidas regionales. Estos saberes forman parte de la memoria cultural de distintas comunidades.',
+
+  ecology: 'Es una especie característica del bosque serrano y puede alcanzar importancia en los ambientes del Chaco Serrano. Forma parte de la estructura del bosque y de sus comunidades vegetales.',
+
+  didYouKnow: 'Sus frutos fueron aprovechados tradicionalmente para elaborar aloja de molle. Aunque se llama “molle”, no debe confundirse con otras especies que comparten ese nombre popular.',
+
+  challengePrimary: 'Observá las hojas sin arrancarlas: ¿podés reconocer los folíolos que forman cada hoja compuesta? ¿Cuántos encontrás?',
+
+  challengeSecondary: '¿Por qué es importante conocer los posibles efectos alergénicos del molle de beber antes de realizar actividades de observación o recolección en el monte?',
+
+  sources: [
+    ['Sistema de Información de Biodiversidad – Administración de Parques Nacionales: Lithraea molleoides', 'https://sib.gob.ar/index.php/especies/lithraea-molleoides'],
+    ['Lozano, Aquino y Zapater (2022). Morfología comparativa en Lithraea (Anacardiaceae), aspectos vegetativos y reproductivos y distribución en Argentina. Lilloa 59(1). DOI: 10.30550/j.lil/2022.59.1/2022.04.06', 'https://doi.org/10.30550/j.lil/2022.59.1/2022.04.06'],
+    ['Árboles y arbustos del Paseo del Bosque – Facultad de Ciencias Naturales y Museo, UNLP', 'https://ri.conicet.gov.ar/']]
   },
   {
     id: 'peperina', common: 'Peperina', scientific: 'Minthostachys verticillata', type: 'Arbusto',
