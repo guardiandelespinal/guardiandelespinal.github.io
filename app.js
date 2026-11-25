@@ -178,10 +178,10 @@ const quickDetails = {
     heroAlt: 'Árbol de molle de beber (Lithraea molleoides)',
     photos: [
       {
-        image: '',
+        image: 'molle-hojas.jpg',
         alt: 'Hojas del molle',
         title: 'Hojas',
-        description: 'Fotografía pendiente. Sus hojas son simples, alternas y de aspecto brillante.'
+        description: 'Hojas simples, alternas y de aspecto brillante.'
       },
       {
         image: '',
@@ -190,10 +190,10 @@ const quickDetails = {
         description: 'Fotografía pendiente. Sus flores son pequeñas y se agrupan en inflorescencias.'
       },
       {
-        image: '',
+        image: 'molle-frutos.jpg',
         alt: 'Frutos del molle',
         title: 'Frutos',
-        description: 'Fotografía pendiente. Produce frutos redondeados, tipo drupa.'
+        description: 'Produce frutos redondeados, tipo drupa.'
       },
       {
         image: '',
