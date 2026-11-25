@@ -170,7 +170,39 @@ const quickDetails = {
       }
     ],
 
-    didYouKnow: 'El fruto del chañar tiene una larga tradición de aprovechamiento alimentario. En distintas regiones se utiliza para preparar arrope y dulces.'
+   didYouKnow: 'El fruto del chañar tiene una larga tradición de aprovechamiento alimentario. En distintas regiones se utiliza para preparar arrope y dulces.'
+  },
+
+  'molle': {
+    hero: 'Molle_Lithraea_molleoides.jpg',
+    heroAlt: 'Árbol de molle de beber (Lithraea molleoides)',
+    photos: [
+      {
+        image: '',
+        alt: 'Hojas del molle',
+        title: 'Hojas',
+        description: 'Fotografía pendiente. Sus hojas son simples, alternas y de aspecto brillante.'
+      },
+      {
+        image: '',
+        alt: 'Flores del molle',
+        title: 'Flores',
+        description: 'Fotografía pendiente. Sus flores son pequeñas y se agrupan en inflorescencias.'
+      },
+      {
+        image: '',
+        alt: 'Frutos del molle',
+        title: 'Frutos',
+        description: 'Fotografía pendiente. Produce frutos redondeados, tipo drupa.'
+      },
+      {
+        image: '',
+        alt: 'Tronco y corteza del molle',
+        title: 'Tronco y corteza',
+        description: 'Fotografía pendiente. Observá el aspecto de sus ramas y corteza.'
+      }
+    ],
+    didYouKnow: 'En distintas regiones se aprovechan tradicionalmente sus frutos para preparar arrope y bebidas fermentadas. El contacto con la planta puede provocar reacciones en personas sensibles.'
   }
 };
 
@@ -190,7 +222,10 @@ function renderQuickDetail(p) {
 
   const photosHTML = q.photos.map(photo => `
     <article class="fact">
-      <img src="${photo.image}" alt="${esc(photo.alt)}" loading="lazy">
+      ${photo.image
+        ? `<img src="${photo.image}" alt="${esc(photo.alt)}" loading="lazy">`
+        : `<div style="min-height:150px;display:flex;align-items:center;justify-content:center;background:#edf1e7;color:#61745a;text-align:center;padding:12px;">Fotografía pendiente</div>`
+      }
       <h4>${esc(photo.title)}</h4>
       <p>${esc(photo.description)}</p>
     </article>
