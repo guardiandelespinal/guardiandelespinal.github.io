@@ -1,4 +1,4 @@
-// Herbario educativo Guardianes del Espinal.
+  // Herbario educativo Guardianes del Espinal.
 // Contenido inicial ampliado. Las fotografías se incorporarán cuando se verifique
 // su identificación botánica, procedencia y licencia de uso.
 const plants = [
@@ -193,5 +193,38 @@ const plants = [
     challengePrimary: 'Observá el tamaño de sus hojas y comparalo con el de un árbol cercano. ¿Qué diferencias encontrás?',
     challengeSecondary: '¿Cómo puede la recolección de frutos afectar a los animales que dependen de ellos? Proponé criterios para una recolección responsable.',
     sources: [['Flora de la provincia de Córdoba – referencia bibliográfica para completar', 'https://editorial.unc.edu.ar/']]
+  },
+ {
+    id: 'cucharero',
+    common: 'Cucharero',
+    scientific: 'Porlieria microphylla',
+    type: 'Arbusto / arbolito',
+
+    region: 'Especie nativa de Argentina, registrada en Córdoba y otras provincias del centro y norte del país. Su presencia autóctona en Río Cuarto y en la Reserva Chocancharava requiere confirmación mediante registros locales.',
+
+    description: 'Arbusto o arbolito de aproximadamente 2 a 4 metros de altura, muy ramificado y con corteza grisácea. Sus ramas presentan nudos marcados y pequeñas estructuras endurecidas. Sus hojas son opuestas y compuestas, formadas por numerosos folíolos pequeños.',
+
+    flower: 'Flores pequeñas, solitarias o agrupadas, de tonos blanquecinos a amarillentos. La floración ocurre principalmente durante la primavera.',
+
+    fruit: 'Frutos pequeños, redondeados y de color morado oscuro a negro cuando maduran. Están formados por varias partes o segmentos, cada uno con una semilla.',
+
+    uses: 'La madera es dura y resistente, y se ha utilizado tradicionalmente para fabricar cucharas y como leña. También existen registros bibliográficos de usos medicinales populares, que deben considerarse saberes tradicionales y no tratamientos médicos comprobados.',
+
+    culture: 'Su nombre común, cucharero, se relaciona con el aprovechamiento de su madera para confeccionar cucharas. Es un ejemplo de cómo las características de una planta y los conocimientos sobre sus materiales pueden quedar reflejados en los nombres populares.',
+
+    ecology: 'Sus frutos pueden ser consumidos por aves y hormigas, que participan en la dispersión de sus semillas. Forma parte de comunidades vegetales de ambientes secos y bosques nativos.',
+
+    didYouKnow: 'El cucharero puede desarrollar frutos oscuros y brillantes, pequeños pero importantes para la alimentación de algunos animales y para la dispersión de sus semillas.',
+
+    challengePrimary: 'Observá sus hojas: ¿podés distinguir los pequeños folíolos que forman cada hoja compuesta? Dibujá una hoja completa.',
+
+    challengeSecondary: '¿Qué relación existe entre los frutos carnosos, los animales que los consumen y la dispersión de semillas? Explicá cómo este proceso puede ayudar a regenerar el monte.',
+
+    sources: [
+      ['Sistema de Información de Biodiversidad – Administración de Parques Nacionales: Porlieria microphylla', 'https://sib.gob.ar/especies/porlieria-microphylla'],
+      ['Arboretum ProYungas – Ficha de Porlieria microphylla', 'https://ediciones.proyungas.org.ar/wp-content/uploads/2025/08/Arboretum-2024-web.pdf'],
+      ['Naturalis – Guayacán / Porlieria microphylla, Universidad Nacional de La Plata', 'https://api.naturalis.fcnym.unlp.edu.ar/server/api/core/bitstreams/5345a17d-888d-4485-897b-a703cb21f45d/content'],
+      ['Frutos de leñosas nativas de Argentina – Universidad Nacional de Santiago del Estero', 'https://fcf.unse.edu.ar/archivos/publicaciones/Frutos%20de%20lenosas%20nativas%20de%20Argentina%20-%20ebook.pdf']
+    ]
   }
 ];
